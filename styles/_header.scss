@@ -1,0 +1,22 @@
+@mixin flexCenter($direction, $background) {
+    display:flex;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;
+    flex-direction: $direction;
+    background: $background;
+}
+
+header {
+    @include flexCenter(column, red);
+    color: $textColor;
+    // nested css writing system
+    button {
+        background: $primaryBtn;
+        transition: .2s;
+        &::after {
+            content:"Hello....";
+        }
+    }
+
+}

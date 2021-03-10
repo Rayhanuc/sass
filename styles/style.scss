@@ -1,0 +1,7 @@
+// Separated some item css and imported here
+@import './variables';
+@import './header';
+
+.contact {
+    @include flexCenter(row, blue);
+}
